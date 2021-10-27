@@ -1,0 +1,53 @@
+{"Tables" : [
+{"tableName" : "Riik", 
+"connectors" : [
+{"source": "Isik", "end": "Riik", "sourceCardinality": "0..*", "endCardinality": "1"
+}
+], 
+"attributes" : [
+{"name":"Riik_id", "type": "varchar", "length": 3, "notNull": true, "pKey": true, "fKey": false, "initialValue":""
+}, 
+{"name":"Pealinn", "type": "varchar", "length": 50, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}, 
+{"name":"Populatsioon", "type": "integer", "length": 0, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}
+]
+}, 
+{"tableName" : "Isik", 
+"connectors" : [
+{"source": "Isik", "end": "Riik", "sourceCardinality": "0..*", "endCardinality": "1"
+}, 
+{"source": "Isik", "end": "Kool", "sourceCardinality": "0..*", "endCardinality": "0..1"
+}
+], 
+"attributes" : [
+{"name":"Isik_id", "type": "integer", "length": 0, "notNull": true, "pKey": true, "fKey": false, "initialValue":""
+}, 
+{"name":"eesnimi", "type": "varchar", "length": 50, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}, 
+{"name":"perenimi", "type": "varchar", "length": 50, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}, 
+{"name":"email", "type": "varchar", "length": 50, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}, 
+{"name":"Riik_id", "type": "varchar", "length": 3, "notNull": true, "pKey": false, "fKey": true, "initialValue":"EST"
+}, 
+{"name":"Kool_id", "type": "integer", "length": 0, "notNull": true, "pKey": false, "fKey": true, "initialValue":""
+}
+]
+}, 
+{"tableName" : "Kool", 
+"connectors" : [
+{"source": "Isik", "end": "Kool", "sourceCardinality": "0..*", "endCardinality": "0..1"
+}
+], 
+"attributes" : [
+{"name":"Kool_id", "type": "integer", "length": 0, "notNull": true, "pKey": true, "fKey": false, "initialValue":""
+}, 
+{"name":"Opilaste_arv", "type": "integer", "length": 0, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}, 
+{"name":"Opetajate_arv", "type": "integer", "length": 0, "notNull": true, "pKey": false, "fKey": false, "initialValue":""
+}
+]
+}
+]
+}

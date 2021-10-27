@@ -1,0 +1,19 @@
+Andmebaasis on tabel Riik
+Tabelis Riik on primaarvõti Riik_id, mis on tüüpi varchar suurusega 3, algväärtusega , piiranguga NOT NULL
+Tabelis Riik on veerg Pealinn, mis on tüüpi varchar suurusega 50, algväärtusega , piiranguga NOT NULL
+Tabelis Riik on veerg Populatsioon, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Iga rida tabelis Isik on seotud täpselt ühe reaga tabelis Riik, kus nende vahel on 0..* 1 suhe.
+Andmebaasis on tabel Isik
+Tabelis Isik on primaarvõti Isik_id, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Tabelis Isik on veerg eesnimi, mis on tüüpi varchar suurusega 50, algväärtusega , piiranguga NOT NULL
+Tabelis Isik on veerg perenimi, mis on tüüpi varchar suurusega 50, algväärtusega , piiranguga NOT NULL
+Tabelis Isik on veerg email, mis on tüüpi varchar suurusega 50, algväärtusega , piiranguga NOT NULL
+Tabelis Isik on välisvõtiRiik_id, mis on tüüpi varchar suurusega 3, algväärtusega EST, piiranguga NOT NULL
+Tabelis Isik on välisvõtiKool_id, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Iga rida tabelis Isik on seotud täpselt ühe reaga tabelis Riik, kus nende vahel on 0..* 1 suhe.
+Iga rida tabelis Isik on seotud täpselt ühe reaga tabelis Kool, kus nende vahel on 0..* 1..* suhe.
+Andmebaasis on tabel Kool
+Tabelis Kool on primaarvõti Kool_id, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Tabelis Kool on veerg Opilaste_arv, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Tabelis Kool on veerg Opetajate_arv, mis on tüüpi integer suurusega 0, algväärtusega , piiranguga NOT NULL
+Iga rida tabelis Isik on seotud täpselt ühe reaga tabelis Kool, kus nende vahel on 0..* 1..* suhe.
