@@ -1,3 +1,6 @@
 # IAIB_Bakalaureusetoo_2022
 IAIB Bakalaureusetöö 2022 repository <br /> 
-Enterprise Architect CASE tool module to generate natural language sentences from visual class diagrams <br />
+Enterprise Architect CASE tool module to generate natural language sentences from visual class diagrams <br /> 
+
+![alt text](https://github.com/alvalt/IAIB_Bakalaureusetoo_2022
+/blob/master/Diagramm.png?raw=true)
